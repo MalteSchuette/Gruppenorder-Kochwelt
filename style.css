@@ -1,6 +1,7 @@
 @font-face {
     font-family: "Raleway", sans-serif;
     src: url(./fonts/Raleway-VariableFont_wght.ttf);
+}
 
 body {
     margin:0;
@@ -56,4 +57,65 @@ a {
     text-decoration: none;
     color: black;
     font-weight: 600;
+}
+
+footer {
+    width: 100%;
+    background-color: #403B3B;
+    height: 250px;
+    margin:0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding-bottom: 50px;
+}
+
+#logo_slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerlogo {
+    height: 100px;
+}
+
+#slogan {
+    padding-right: 40px;
+}
+
+#slogan_socials {
+    margin: 20px;
+}
+
+#social_logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer_socials img {
+    width: auto;
+    height: 25px;
+    object-fit: cover;
+}
+
+
+.seperator_footer {
+    background-color: #efefef27 ;
+    width: 1px;
+    height: 50%;
+}
+
+#req_links {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+
+#req_links a {
+    color:white;
 }
