@@ -59,6 +59,40 @@ a {
     font-weight: 600;
 }
 
+.recept_card {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    gap: 32px;
+}
+
+.recept_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.recept_text h2 {
+    text-align: center;
+}
+
+.recept_text p {
+    display: flex;
+    justify-content: center;
+}
+
+.recept_img {
+    display: flex;
+    justify-content: end;
+    border-radius: 8px;
+    padding-bottom: 120px;
+}
+
+.dish {
+    width: 250px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
 footer {
     width: 100%;
     background-color: #403B3B;
