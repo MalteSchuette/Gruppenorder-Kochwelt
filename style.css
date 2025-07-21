@@ -57,6 +57,8 @@ a {
     display: flex;
     align-items: center;
     gap: 32px;
+    padding-left: 160px;
+    padding-right: 160px;
 }
 .recept_img1{
   flex: 1;
@@ -250,4 +252,9 @@ footer {
 
 #recipe_ideas h2 {
 
+}
+
+.jeromes_recept {
+    padding-left: 160px;
+    padding-right: 160px;
 }
