@@ -14,7 +14,7 @@ body {
 }
 
 #top_logo {
-    height: 100px;
+    height: 70px;
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -55,20 +55,21 @@ a {
 }
 .dennis_recept{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 32px;
     padding-left: 160px;
     padding-right: 160px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 .recept_img1{
   flex: 1;
 }
 .dish1{
-    height: 250px;
-    width: 400px;
+    height: 300px;
+    width: 450px;
     border-radius: 8px;
     object-fit: cover;
-    padding-top: 80px;
 }
 .button{
     display: inline-block;
@@ -76,6 +77,7 @@ a {
     color: white;
     text-decoration: none;
     padding: 16px;
+    transition: all 125ms
 }
 .button:hover{
     transform: scale(1.2);
@@ -83,8 +85,9 @@ a {
 }
 .recept_card {
     display: flex;
-    justify-content: end;
-    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 32px;
 }
 
@@ -104,15 +107,16 @@ a {
 
 .recept_img {
     display: flex;
-    justify-content: end;
+    justify-content:;
     border-radius: 8px;
     padding-bottom: 120px;
 }
 
 .dish {
-    width: 250px;
+    width: 200px;
     border-radius: 8px;
     object-fit: cover;
+    margin-left: 40px;
 }
 
 footer {
@@ -124,6 +128,8 @@ footer {
     align-items: center;
     color: white;
     padding-bottom: 50px;
+    padding-left: 160px;
+    padding-right: 160px;
 
 }
 
@@ -140,6 +146,7 @@ footer {
 
 #slogan {
     padding-right: 40px;
+    font-size: 16px;
 }
 
 #slogan_socials {
@@ -202,16 +209,17 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 8px;
     transition-duration: 125ms;
     transition-property: all;
     transition-timing-function: ease;
+    height: 200px;
     
 }
 
 #recipe_all_img {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
 
@@ -257,4 +265,23 @@ footer {
 .jeromes_recept {
     padding-left: 160px;
     padding-right: 160px;
+}
+
+h2 {
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.p-margin-bot {
+    margin-bottom: 85px;
+}
+
+.s3-text-img {
+    display: flex;
+}
+
+.s3_h2_padding_top {
+    padding-top: 50px;
 }
