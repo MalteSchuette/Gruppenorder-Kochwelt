@@ -26,8 +26,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-right: 40px;
-    padding-left: 40px;
     box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.2);
     box-sizing: border-box;
     padding-left: 160px;
