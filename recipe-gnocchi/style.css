@@ -1,0 +1,156 @@
+body{
+    margin:0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+     }
+    
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.2);
+        padding-left: 160px;
+        padding-right:160px;
+    }
+    
+   .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:12px;
+    
+}
+    .navLink{
+        color: black;
+        text-decoration: none;
+        margin: 8px;
+        font-weight:bold;
+    }
+    .navLink:hover{
+        cursor: pointer;
+        color: #377e22;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+    }
+    main{
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+    h1{
+        font-size: 28px;
+        margin-block-start: 86px;
+    }
+    .pita{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       object-fit: cover;
+       overflow: hidden;
+       border-radius: 12px;
+       width: 100%;
+       height: 300px;
+
+        
+    }
+    .knowhow{
+        display: flex;
+        justify-content:flex-start;
+        gap: 16px;
+        padding-top: 32px;
+ }
+ .knowhow2{
+    display: flex;
+        justify-content:flex-start;
+        gap: 16px;
+        padding-top: 32px;
+ }
+ .bilders{
+    width: 16px;
+    height: 16px;
+ }
+ .info{
+    background-color:#efefef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    padding: 6px;
+    gap: 6px;
+ }
+ .seperator{
+    background-color: #efefef;
+    width: 100%;
+    height: 2px;
+    margin-top: 80px;
+    margin-bottom: 16px;
+ }
+ .menge{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 410px;
+    padding-bottom: 15px;
+ }
+ #zutaten{
+    padding-right: 8px;;
+ }
+ #amount{
+    padding: 10px;
+    font-size: 12px;
+    border-color: rgb(65, 62, 62, 0.2);
+    border-style: solid;
+    border-right: 4px;
+    flex: 1;
+ }
+ .button{
+    background-color:#377e22;
+    padding: 12px;
+    border-width: 0;
+    color: white;
+    font-size: 12px;
+ }
+ 
+ tr:nth-child(odd){
+    background-color: #efefef;
+    
+ }
+ td{
+    
+    padding: 20px;
+    border-radius: 10px;
+   
+ }
+ .tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    unicode-bidi: isolate;
+    border-color: inherit;
+ }
+   table{
+    width: 100%;
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+    
+   }
+ .profile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 30px;
+    gap: 60px;
+    margin-top: 26px;
+    margin-bottom: 160px;
+ }
+ .profilebild{
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 100%;
+ }
+ footer{
+    background-color:#3f3b3b;
+    width: 100%;
+    height: 60vh;
+
+ }
+ 
