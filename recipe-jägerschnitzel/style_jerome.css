@@ -1,0 +1,718 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('./fonts/Raleway-VariableFont_wght.ttf') format(woff2);
+}
+
+body
+{
+    font-family: 'Raleway';
+    font-size: 16px;
+    
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.max_width
+{
+    width: 100%;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 20%);
+    margin: 0 auto;
+}
+
+header
+{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 1440px;
+}
+
+.logo
+{
+    width: auto;
+    height: 64px;
+    padding-left: 160px;
+    transform: scale(0.8);
+}
+
+.logo:hover
+{
+    transform: scale(0.8) translateX(8px);
+    filter: drop-shadow(2px 6px 8px rgba(0,0,0,20%));
+    transition: all 125ms ease-in-out;
+}
+
+.navlist
+{
+    display: flex;
+    gap: 8px;
+}
+
+.first_nav
+{
+    display: flex;
+    padding-right: 160px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.list_anchor 
+{
+    padding-top: 42px;
+}
+
+a:hover
+{
+    text-decoration: underline;
+    text-decoration-thickness: 3.5px;
+    text-underline-offset: 10px;
+    color: #008000;
+    transition: all 125ms ease-in-out;
+}
+
+header a 
+{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.main_max_width
+{
+    width: 100%;
+}
+
+main
+{
+    max-width: 1440px;
+    height: auto;
+}
+
+h1
+{
+    font-size: 32px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-bottom: 16px;
+    position: absolute;
+    top: 120px;
+}
+
+.img_container
+{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: anchor-center;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 50px;
+}
+
+h2 
+{
+    font-size: 24px;
+    padding-bottom: 16px;
+    text-align: left;
+    font-weight: 500;
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+}
+
+.my_img
+{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.icons_container
+{
+    display: flex;
+    gap: 10px;
+    padding-left: 160px;
+    padding-bottom: 32px;
+}
+
+.icons
+{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #efefef;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 16px;
+}
+
+.icons img 
+{
+    width: 16px;
+    height: 16px;
+}
+
+.seperator
+{
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 79%;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+}
+
+.portion_controls
+{
+    display: flex;
+    padding-left: 160px;
+    padding-top: 16px;
+    padding-right: 160px;
+}
+
+h3
+{
+    padding-right: 18px;
+    font-weight: 300;
+    text-align: left;
+    padding-top: 8px;
+    font-size: 16px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.input-wrapper 
+{
+  position: relative;
+  display: inline-block;
+  
+}
+
+#crowd
+{
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 140px;
+    height: 36px;
+    padding-right: 8px;
+    margin-left: 8px;
+    box-sizing: border-box;
+}
+
+.btn
+{
+    background-color: #008000;
+    width: 140px;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: -5px;
+    right: 0px;
+    padding: 0 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover
+{
+    transform: scale(1) ;
+    filter: drop-shadow(2px 6px 8px rgba(0,0,0,1));
+    transition: all 125ms ease-in-out;
+}
+
+.ingredients_list
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style-type: none;
+    margin-top: 16px;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+.list_white
+{
+    display: flex;
+    height: 40px;
+    padding-left: 16px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.list_shadow
+{
+    display: block;
+    border-radius: 8px;
+    background-color: #efefef;
+    padding-top: 6px;
+    padding-left: 16px;
+}
+
+.preparation
+{
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 32px;
+}
+
+p
+{
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+
+.autor
+{
+    padding-top: 24px;
+    padding-left: 160px;
+    padding-bottom: 50px;
+}
+
+.autor h3
+{
+    font-weight: 600;
+    padding-bottom: 24px;
+}
+
+.autor_img
+{
+    display: flex;
+    height: 150px;
+    border-radius: 100px;
+    align-items: anchor-center;
+    gap: 40px;
+}
+ 
+.profile_img
+{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding-bottom: 80px;
+}
+
+.footer_max_width
+{
+    width: 100%;
+    background-color: #403b3b;
+}
+
+footer
+{
+    max-width: 1440px;
+    height: 144px;
+    background-color: #403b3b;
+    padding-top: 80px;
+}
+
+.burger_line {
+    height: 4px;
+    background-color: black;
+    width: 32px;
+    display: flex;
+    margin-top: 4px;
+}
+
+.d_none {
+    display: none;
+    position: fixed;
+    right: 10px;
+    top: 65px;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+}
+
+#menu.d_none {
+        display: none;
+        border: 1px solid black;
+        background-color: #efefef;
+}
+.d_none a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.burger_menu {
+    display: none;
+    border-style: none;
+}
+
+
+@media(max-width: 1020px)
+{
+    h1{
+        font-size: 28px;
+    }
+}
+
+@media(max-width: 845px)
+{
+    .first_nav
+    {
+        padding-right: 100px;
+    }
+
+    .logo 
+    {
+        padding-left: 100px;
+    }
+
+    .img_container
+    {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .icons_container
+    {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .portion_controls
+    {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .ingredients_list
+    {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .preparation
+    {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    p 
+    {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .autor
+    {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media(max-width:825px)
+{
+    h1{
+        font-size: 26px;
+        text-align: left;
+    }
+}
+
+@media(max-width: 768px)
+{
+
+    h1 
+    {
+        width: 70%;
+        top: 100px;
+    }
+
+    .first_nav
+    {
+        padding-right: 0;
+    }
+    .navlist
+    {
+        display: none;
+    }
+
+    .burger_menu {
+        display: flex;
+        flex-direction: column;
+        border-style: none;
+        background-color: transparent;
+        position: absolute;
+        right: 50px;
+        top: 20px;
+        width: 40px;
+        height: 32px;
+    } 
+
+    .burger_line {
+        height: 6px;
+        width: 100%;
+        background-color: black;
+        margin: 3px 0;
+        border-radius: 2px;
+  }
+
+      #menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        text-align: end;
+        top: 65px;
+        background-color: transparent;
+        padding: 10px;
+        z-index: 1000;
+        right: 45px;
+  }
+
+    #menu.d_none 
+    {
+        display: none;
+    }
+
+    nav ul 
+    {
+        list-style: none;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 602px)
+{
+    h1 
+    {
+        width: 60%;
+    }
+}
+
+@media(max-width: 593px)
+{
+    #crowd
+    {
+        width: 120px;
+    }
+
+    .btn
+    {
+        width: 120px;
+    }
+}
+
+@media(max-width: 550px)
+{
+    h1 
+    {
+        font-size: 24px;
+        width: 65%;
+    }
+
+    h2 
+    {
+        font-size: 22px;
+    }
+
+    h3 
+    {
+        font-size: 20px;
+    }
+
+    #crowd
+    {
+        width: 100px;
+    }
+
+    .btn
+    {
+        width: 100px;
+    }
+}
+
+@media(max-width: 514px)
+{
+    .logo 
+    {
+        padding-left: 60px;
+    }
+
+    .img_container
+    {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .icons_container
+    {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .portion_controls
+    {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .ingredients_list
+    {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .preparation
+    {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    p 
+    {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .autor
+    {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+@media(max-width: 470px)
+{
+    h1 
+    {
+        font-size: 22px;
+        width: 70%;
+    }
+
+    h2 
+    {
+        font-size: 20px;
+    }
+
+    h3 
+    {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 434px)
+{
+    #crowd
+    {
+        width: 85px;
+    }
+
+    .btn
+    {
+        width: 85px;
+    }
+}
+
+@media(max-width: 405px)
+{
+    h1 
+    {
+        width: 80%;
+    }
+
+    #crowd
+    {
+        width: 70px;
+    }
+
+    .btn
+    {
+        width: 70px;
+    }
+
+    .icons_container
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .burger_menu
+    {
+        right: 15px;
+    }
+
+    #menu
+    {
+        right: 10px;
+    }
+}
+
+@media(max-width: 380px)
+{
+    .logo 
+    {
+        padding-left: 30px;
+    }
+
+    .img_container
+    {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .icons_container
+    {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .portion_controls
+    {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .ingredients_list
+    {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .preparation
+    {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    p 
+    {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .autor
+    {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media(max-width:355px)
+{
+    h1 
+    {
+        width: 90%;
+    }
+}
