@@ -6,6 +6,11 @@
     <title>Rezept Rindfleisch Penang</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="icon" href="./img/logo_small.png" type="image/png">
+    <script>
+      function toggleburgermenu(){
+        document.getElementById("resp_menu").classList.toggle("burgerdropdown_closed")
+      }
+    </script>
   </head>
   <body>
     <header id="logo_center">
@@ -16,6 +21,15 @@
         <a class="navlinks" href="#contact">Kontakt</a>
         <a class="navlinks" href="/impressum.html">Impressum</a>
       </nav>
+      <button onclick="toggleburgermenu()" class="burgermenu burgerbutton"><div class="linien"><hr></div>
+      <div class="linien"><hr></div>
+      <div class="linien"><hr></div></button>
+      <div id="resp_menu" class="burgerdropdown burgerdropdown_closed">
+        <a class="burgerlink" href="/index.html">Start</a>
+        <a class="burgerlink" href="/recipe-rindfleisch-penang/recipe_rindfleisch_penang.html">Rezept des Tages</a>
+        <a class="burgerlink" href="/index.html">Kontakt</a>
+        <a class="burgerlink" href="/impressum.html">Impressum</a>
+      </div>
     </header>
     <main>
       <h1>Rindfleisch Penang</h1>
