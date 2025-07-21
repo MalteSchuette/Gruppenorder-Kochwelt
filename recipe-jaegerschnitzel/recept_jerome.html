@@ -8,7 +8,6 @@
         <link rel="icon" href="./img/logo_small.png" type="image/svg+xml">
         <link rel="stylesheet" href="style_jerome.css">
         <script src="script.js"></script>
-
     </head>
     <body>  
 
@@ -21,20 +20,20 @@
 
         <nav class="d_none" id="menu" onclick="toggleMenu()">
             <ul>
-                <li><a href="">Start</a></li>
-                <li><a href="">Rezept des Tages</a></li>
-                <li><a href="">Kontakt</a></li>
-                <li><a href="">Impressum</a></li>
+                <li><a href="../index.html">Start</a></li>
+                <li><a href="#">Rezept des Tages</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
             </ul>
         </nav>
         
         <section class="max_width">
             <header>
-                <a href="index.html"><img class="logo" src="./img/logo.png" alt="Kochwelt Logo"></a>
+                <a href="../index.html"><img class="logo" src="./img/logo.png" alt="Kochwelt Logo"></a>
                 <nav class="first_nav">
                     <ul class="navlist">
-                        <li class="list_anchor"><a href="index.html">Start</a></li>
-                        <li class="list_anchor"><a href="rezept.html">Rezept des Tages</a></li>
+                        <li class="list_anchor"><a href="../index.html">Start</a></li>
+                        <li class="list_anchor"><a href="#">Rezept des Tages</a></li>
                         <li class="list_anchor"><a href="contact">Kontakt</a></li>
                         <li class="list_anchor"><a href="impressum.html" target="_blank">Impressum</a></li>
                     </ul>   
@@ -127,9 +126,30 @@
         
 
         <section class="footer_max_width">
-            <footer>
-
-        </footer>
+            <footer> 
+                <div id="logo_slogan">
+                    <picture>
+                    <source class="footerlogo" srcset="img\logo_small_white.png" media="(max-width: 850px)">
+                    <source class="footerlogo" srcset="./img/logo_white.png" media="(max-width: 1440px)">
+                    <img class="footerlogo" src="./img/logo_white.png" alt="Logo von Kochwelt">
+                    </picture>
+                    <span id="slogan" class="display_none_850">-Rezepte, die dein Herz erwärmen.-</span>
+                </div>
+                <div class="seperator_footer display_none_500"></div>
+                <div id="footer_socials">
+                    <span id="slogan_socials">Jetzt auch auf Social Media!</span>
+                    <div id="social_logos">
+                    <a href="http://www.facebook.com"> <img src="./img/facebook_white.png" alt="Facebooklogo"> </a>
+                    <a href="http://www.instagram.com"> <img src="./img/instagram_white.png" alt="Instagramlogo"> </a>
+                    <a href="http://www.twitter.com"> <img src="./img/twitter_white.png" alt="Facebooklogo"> </a>
+                    </div>  
+                </div>
+                <div class="seperator_footer display_none_500"></div>
+                    <div id="req_links">
+                        <a href="#impressum">Impressum</a>
+                        <a href="#Datenschutz">Datenschutz</a>
+                </div>
+            </footer>
         </section>
     </body>
 </html>
