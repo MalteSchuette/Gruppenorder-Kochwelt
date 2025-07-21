@@ -53,6 +53,65 @@ a {
     color: black;
     font-weight: 600;
 }
+.dennis_recept{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.recept_img1{
+  flex: 1;
+}
+.dish1{
+    height: 250px;
+    width: 400px;
+    border-radius: 8px;
+    object-fit: cover;
+    padding-top: 80px;
+}
+.button{
+    display: inline-block;
+    background-color: #008000;
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+}
+.button:hover{
+    transform: scale(1.2);
+    border-radius: 10px;
+}
+.recept_card {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    gap: 32px;
+}
+
+.recept_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.recept_text h2 {
+    text-align: center;
+}
+
+.recept_text p {
+    display: flex;
+    justify-content: center;
+}
+
+.recept_img {
+    display: flex;
+    justify-content: end;
+    border-radius: 8px;
+    padding-bottom: 120px;
+}
+
+.dish {
+    width: 250px;
+    border-radius: 8px;
+    object-fit: cover;
+}
 
 footer {
     background-color: #403B3B;
