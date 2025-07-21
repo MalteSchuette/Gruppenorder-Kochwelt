@@ -54,7 +54,7 @@ a {
     font-weight: 600;
 }
 
-/* Header ab hier */
+/* Header bis hier */
 
 .dennis_recept{
     display: flex;
@@ -128,13 +128,12 @@ footer {
     height: 250px;
     margin:0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     color: white;
     padding-bottom: 50px;
     padding-left: 160px;
     padding-right: 160px;
-
 }
 
 #logo_slogan {
