@@ -13,6 +13,8 @@ body {
 
 }
 
+/* Header ab hier */
+
 #top_logo {
     height: 70px;
     margin-bottom: 20px;
@@ -53,6 +55,9 @@ a {
     color: black;
     font-weight: 600;
 }
+
+/* Header ab hier */
+
 .dennis_recept{
     display: flex;
     align-items: flex-start;
@@ -118,6 +123,8 @@ a {
     margin-left: 40px;
 }
 
+
+/* Footer ab hier*/
 footer {
     background-color: #403B3B;
     height: 250px;
@@ -181,6 +188,8 @@ footer {
 #req_links a {
     color:white;
 }
+
+/* Footer bis hier*/
 
 #recipe_ideas {
     padding-left: 160px;

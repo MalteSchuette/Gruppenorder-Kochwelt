@@ -38,7 +38,6 @@ h1 {
 }
 
 footer {
-    width: 100%;
     background-color: #403B3B;
     height: 250px;
     margin:0;
@@ -47,6 +46,9 @@ footer {
     align-items: center;
     color: white;
     padding-bottom: 50px;
+    padding-left: 160px;
+    padding-right: 160px;
+
 }
 
 #logo_slogan {
@@ -56,8 +58,47 @@ footer {
     align-items: center;
 }
 
+.footerlogo {
+    height: 100px;
+}
+
 #slogan {
     padding-right: 40px;
+    font-size: 16px;
+}
+
+#slogan_socials {
+    margin: 20px;
+}
+
+#social_logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer_socials img {
+    width: auto;
+    height: 25px;
+    object-fit: cover;
+}
+
+
+.seperator_footer {
+    background-color: #efefef27 ;
+    width: 1px;
+    height: 50%;
+}
+
+#req_links {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+
+#req_links a {
+    color:white;
 }
 
 main {
