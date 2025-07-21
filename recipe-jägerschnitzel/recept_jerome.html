@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rezept des Tages</title>
+
+        <link rel="icon" href="./img/logo_small.png" type="image/svg+xml">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+
+    </head>
+    <body>  
+
+        
+        <button class="burger_menu" onclick="toggleMenu()">
+                <span class="burger_line"></span>
+                <span class="burger_line"></span>
+                <span class="burger_line"></span>
+        </button>
+
+        <nav class="d_none" id="menu" onclick="toggleMenu()">
+            <ul>
+                <li><a href="">Start</a></li>
+                <li><a href="">Rezept des Tages</a></li>
+                <li><a href="">Kontakt</a></li>
+                <li><a href="">Impressum</a></li>
+            </ul>
+        </nav>
+        
+        <section class="max_width">
+            <header>
+                <a href="index.html"><img class="logo" src="./img/logo.png" alt="Kochwelt Logo"></a>
+                <nav class="first_nav">
+                    <ul class="navlist">
+                        <li class="list_anchor"><a href="index.html">Start</a></li>
+                        <li class="list_anchor"><a href="rezept.html">Rezept des Tages</a></li>
+                        <li class="list_anchor"><a href="contact">Kontakt</a></li>
+                        <li class="list_anchor"><a href="impressum.html" target="_blank">Impressum</a></li>
+                    </ul>   
+                </nav>
+            </header>
+        </section>
+        
+        <section class="main_max_width">
+            <main> 
+                <article class="img_container">
+                    <h1>Jägerschnitzel mit Nudeln und Tomatensoße</h1> 
+                    <img class="my_img" src="./img/rezept.png" alt="Jägerschnitzel mit Nudeln und Tomatensoße">
+                </article>
+                <div class="icons_container">
+                    <div class="icons">
+                    <img src="./img/icons/clock-regular.svg" alt="Time of the Lenght">
+                    <span>50 Min.</span>
+                    </div>
+                    <div class="icons">
+                        <img src="./img/icons/brain-solid.svg" alt="Difficultly level">
+                        <span>Simpel</span>
+                    </div>
+                    <div class="icons">
+                        <img src="./img/icons/calendar-alt-regular.svg" alt="Date">
+                        <span>16.07.2025</span>
+                    </div>
+                </div>
+                <div class="seperator"></div>
+
+                <section class="portion_controls">
+                        <div class="input-wrapper">
+                            <label for="crowd">Zutaten für</label>
+                            <input id="crowd" type="number" min="1" value="4">
+                            <button class="btn">Portionen</button>
+                        </div>
+                </section>
+                <section class="ingredients_list">
+                    <ul>
+                        <li class="list_shadow">4 dicke Scheiben Jagdwurst</li>
+                        <li class="list_white">4 EL Öl (geschmacksneutral)</li>
+                        <li class="list_shadow">5 EL Semmelbrösel</li>
+                        <li class="list_white">2 EL Mehl</li>
+                        <li class="list_shadow">1 Ei</li>
+                        <li class="list_white">Salz und Pfeffer</li>
+                        <li class="list_shadow">400g Spirelli Nudeln</li>
+                        <li class="list_white">1/2 TL Zucker</li>
+                        <li class="list_shadow">200g Ketchup</li>
+                        <li class="list_white">1 TL Mehl</li>
+                        <li class="list_shadow">2 EL Tomatenmark</li>
+                        <li class="list_white">1 EL Butter</li>
+                        <li class="list_shadow">1 Zwiebel</li>
+                    </ul>
+                </section>
+                <article class="preparation">
+                    <h2>Zubereitung</h2>
+                </article>
+                <div class="icons_container">
+                    <div class="icons">
+                        <img src="./img/icons/clock-regular.svg" alt="Time of the Lenght">
+                        <span>ca. 50 Minuten</span>
+                    </div>
+                    <div class="icons">
+                        <img src="./img/icons/clock-regular.svg" alt="Time of the Lenght">
+                        <span>Gesamtdauer ca. 50 Minuten</span>
+                    </div>
+                </div>
+                <article class="instructions">
+                    <p>Begonnen wird mit der Nudelsoße.<br>
+                    Dazu die Zwiebel in feine Würfel schneiden und in Butter in einem Topf glasig dünsten.<br>
+                    Anschließend das Mehl hinzugeben und unter Rühren kurz anschwitzen.<br>
+                    Das Ganze mit 100ml Wasser und dem Tomatenmark auffüllen.<br>
+                    Zu guter letzt den Ketchup dazugeben und anschließend etwa 10 Minuten köcheln lassen.<br>
+                    Alles entsprechend mit Pfeffer, Salz und Zucker verfeinern und abschmecken.<br>
+                    Während des Köchelns der Soße können die Nudeln nach der Anleitung auf der Verpackung gekocht werden.<br>
+                    Für die Zubereitung der Jägerschnitzel das Mehl in eine Schüssel füllen. Anschließend das Ei in eine andere Schüssel füllen und mit Pfeffer und Salz würzen und verquirlen.<br>
+                    Weiterhin die Semmelbröel auf einen tiefen Teller ausschütten und breit streichen.<br>
+                    Anschließend die Jagdwurstscheiben zuerst in Mehl, dann im Ei und zum Schluss in den Semmelbröseln wenden.<br>
+                    Nachdem alle Scheiben vorbereitet sind, etwas Öl in einer Pfanne erhitzen und die Wurstscheiben darin von beiden Seiten knusprig anbraten.<br>
+                    Nach dem Braten alle Jägerschnitzel auf Küchenpapier abtropfen lassen und mit den vorbereiteten Nudeln und der Tomatensoße servieren.</p>
+                </article>
+                <section class="autor">
+                    <h3>Rezept erstellt von</h3>
+                    <article class="profile_img">
+                        <img src="./img/autor.jpg" alt="Picture from Autor">
+                        <span>Jermaine Jérôme</span>
+                    </article>
+                </section>
+            </main>
+        </section>
+        
+
+        <section class="footer_max_width">
+            <footer>
+
+        </footer>
+        </section>
+    </body>
+</html>

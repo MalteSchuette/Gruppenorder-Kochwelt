@@ -1,0 +1,24 @@
+.burger_line {
+    height: 4px;
+    background-color: black;
+    width: 32px;
+    display: flex;
+    margin-top: 4px;
+}
+
+.d_none {
+    display: none;
+}
+
+nav{
+        background: orange;
+        padding: 8px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    border-style: none;
+}
