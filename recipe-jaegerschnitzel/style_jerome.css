@@ -30,7 +30,6 @@ header
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.2);
     box-sizing: border-box;
     padding-left: 160px;
     padding-right: 160px;
@@ -44,6 +43,7 @@ header
     margin-top: 20px;
     width: auto;
     transform: scale(0.8);
+    /* padding-left: 150px; */
 }
 
 .logo:hover
@@ -67,6 +67,7 @@ header
     justify-content: center;
     align-items: center;
     gap: 15px;
+    /* padding-right: 160px; */
 }
 
 .list_anchor 
@@ -99,6 +100,8 @@ main
 {
     max-width: 1440px;
     height: auto;
+    padding-left: 160px;
+    padding-right: 160px;
 }
 
 h1
@@ -108,7 +111,7 @@ h1
     margin-block-end: 0;
     padding-bottom: 16px;
     position: absolute;
-    top: 120px;
+    top: 160px;
 }
 
 .img_container
@@ -120,8 +123,8 @@ h1
     flex-direction: column;
     justify-content: center;
     align-items: anchor-center;
-    padding-left: 160px;
-    padding-right: 160px;
+    /* padding-left: 160px;
+    padding-right: 160px; */
     padding-top: 50px;
 }
 
@@ -148,7 +151,7 @@ h2
 {
     display: flex;
     gap: 10px;
-    padding-left: 160px;
+    /* padding-left: 160px; */
     padding-bottom: 32px;
 }
 
@@ -182,9 +185,9 @@ h2
 .portion_controls
 {
     display: flex;
-    padding-left: 160px;
+    /* padding-left: 160px; */
     padding-top: 16px;
-    padding-right: 160px;
+    /* padding-right: 160px; */
 }
 
 h3
@@ -244,8 +247,8 @@ h3
     grid-template-columns: 1fr;
     list-style-type: none;
     margin-top: 16px;
-    padding-left: 160px;
-    padding-right: 160px;
+    /* padding-left: 160px;
+    padding-right: 160px; */
 }
 
 .list_white
@@ -268,22 +271,22 @@ h3
 
 .preparation
 {
-    padding-left: 160px;
-    padding-right: 160px;
+    /* padding-left: 160px;
+    padding-right: 160px; */
     padding-top: 32px;
 }
 
-p
+/* p
 {
     padding-left: 160px;
     padding-right: 160px;
-}
+} */
 
 
 .autor
 {
     padding-top: 24px;
-    padding-left: 160px;
+    /* padding-left: 160px; */
     padding-bottom: 50px;
 }
 
@@ -331,6 +334,11 @@ footer
     padding-right: 160px;
 }
 
+footer a 
+{
+    padding-left: 30px;
+}
+
 #logo_slogan {
     display: flex;
     flex-direction: column;
@@ -362,7 +370,11 @@ footer
     object-fit: cover;
 }
 
-
+.footer_socials
+{
+    display: flex;
+    flex-direction: column;
+}
 .seperator_footer {
     background-color: #efefef27 ;
     width: 1px;
@@ -404,7 +416,14 @@ footer
         border: 1px solid black;
         background-color: #efefef;
 }
-.d_none a
+
+#menu
+{
+    background-color: #efefef;
+    border: 1px solid black;
+}
+
+.burger_menu_a
 {
     text-decoration: none;
     color: black;
@@ -428,82 +447,66 @@ ul {
     }
 }
 
-@media(max-width: 845px)
+@media(max-width: 933px)
 {
-    .first_nav
+    h1 
     {
-        padding-right: 100px;
-    }
-
-    .logo 
-    {
-        padding-left: 100px;
+        width: 65%;
+        top: 160px;
     }
 
     .img_container
     {
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-top: 100px;
     }
 
-    .icons_container
+    header
+    {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+
+    main 
     {
         padding-left: 100px;
         padding-right: 100px;
     }
 
-    .portion_controls
-    {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
-    .ingredients_list
-    {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
-    .preparation
-    {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
-    p 
-    {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
-    .autor
+    footer 
     {
         padding-left: 100px;
         padding-right: 100px;
     }
 }
 
-@media(max-width:825px)
+@media(max-width: 849px)
 {
-    h1{
-        font-size: 26px;
-        text-align: left;
+    .footerlogo
+    {
+        height: 80px;
+    }
+
+    #logo_slogan
+    {
+        text-align: center;
     }
 }
 
-@media(max-width: 768px)
+@media(max-width: 786px)
 {
 
     h1 
     {
-        width: 70%;
-        top: 100px;
+        width: 90%;
+        top: 180px;
+        text-align: left;
     }
 
     .first_nav
     {
         padding-right: 0;
     }
+
     .navlist
     {
         display: none;
@@ -514,9 +517,9 @@ ul {
         flex-direction: column;
         border-style: none;
         background-color: transparent;
-        position: absolute;
+        position: fixed;
         right: 50px;
-        top: 20px;
+        top: 40px;
         width: 40px;
         height: 32px;
     } 
@@ -534,8 +537,8 @@ ul {
         flex-direction: column;
         position: fixed;
         text-align: end;
-        top: 65px;
-        background-color: transparent;
+        top: 75px;
+        background-color: #efefef;
         padding: 10px;
         z-index: 1000;
         right: 45px;
@@ -553,6 +556,64 @@ ul {
         display: flex;
         flex-direction: column;
     }
+
+    header
+    {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    main 
+    {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    footer 
+    {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+@media(max-width: 700px)
+{
+    h1 
+    {
+        width: 80%;
+        top: 170px;
+    }
+}
+
+@media(max-width: 659px)
+{
+    header 
+    {
+        padding-left: 44px;
+        padding-right: 44px;
+    }
+
+    main 
+    {
+        padding-left: 44px;
+        padding-right: 44px;
+    }
+
+    footer 
+    {
+        padding-left: 44px;
+        padding-right: 44px;
+    }
+
+    #crowd
+    {
+        width: 100px;
+    }
+
+    .btn
+    {
+        width: 100px;
+    }
 }
 
 @media(max-width: 602px)
@@ -565,6 +626,11 @@ ul {
 
 @media(max-width: 593px)
 {
+
+    h1 
+    {
+        width: 80%;
+    }
     #crowd
     {
         width: 120px;
@@ -573,6 +639,19 @@ ul {
     .btn
     {
         width: 120px;
+    }
+}
+
+@media(max-width: 555px)
+{
+    .footerlogo
+    {
+        height: 50px;
+    }
+
+    #slogan
+    {
+        padding-right: 20px;
     }
 }
 
@@ -605,53 +684,43 @@ ul {
     }
 }
 
-@media(max-width: 514px)
+@media(max-width: 516px)
 {
-    .logo 
+
+    header
     {
-        padding-left: 60px;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 
-    .img_container
+    main 
     {
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 
-    .icons_container
+    footer 
     {
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media(max-width: 479px)
+{
+    #slogan
+    {
+        padding-right: 10px;
     }
 
-    .portion_controls
+    .footerlogo
     {
-        padding-left: 60px;
-        padding-right: 60px;
+        width: 44px;
     }
 
-    .ingredients_list
+    #slogan_socials
     {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-
-    .preparation
-    {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-
-    p 
-    {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-
-    .autor
-    {
-        padding-left: 60px;
-        padding-right: 60px;
+        margin: 0;
     }
 }
 
@@ -685,8 +754,41 @@ ul {
     {
         width: 85px;
     }
+
+    .seperator_footer
+    {
+        display: none;
+    }
+
+    #slogan
+    {
+        display: none;
+    }
+
+    #slogan_socials
+    {
+        display: none;
+    }
+
+    footer 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .footerlogo
+    {
+        padding-left: 5px;
+    }
 }
 
+@media(max-width: 416px)
+{
+    
+}
 @media(max-width: 405px)
 {
     h1 
@@ -775,6 +877,38 @@ ul {
 {
     h1 
     {
-        width: 90%;
+        width: 70%;
+        top: 150px;
+    }
+
+    header
+    {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    main 
+    {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    footer 
+    {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+@media(max-width: 345px)
+{
+    .input-wrapper
+    {
+        display: flex;
+    }
+
+    label
+    {
+        padding-top: 8px;
     }
 }
