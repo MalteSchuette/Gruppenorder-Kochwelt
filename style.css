@@ -10,7 +10,8 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
-
+    position: relative;
+    overflow-x: hidden;
 }
 
 /* Header ab hier */
@@ -201,10 +202,19 @@ footer {
     color: white;
     justify-content: center;
     text-align: center;
+    padding-left: 30px;
+
+}
+
+#footer_socials {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
 }
 
 #req_links a {
     color:white;
+    font-weight: 400;
 }
 
 /* Footer bis hier*/
@@ -306,4 +316,146 @@ h2 {
 
 .s3_h2_padding_top {
     padding-top: 50px;
+}
+
+@media(max-width:1114px) {
+
+    #nav_none {
+        display: none;
+    }
+
+.burgermenu {
+    display: none;
+    border-style: solid;
+    border-color: rgb(143, 140, 140);
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .burgermenu {
+        display: block;
+    }
+
+}
+
+@media(max-width:850px) {
+    
+    .display_none_850 {
+        display: none;
+    }
+
+}
+
+
+
+.linien{
+    display: flex;
+    flex-direction: column;
+}
+
+hr {
+    width:10px;
+    text-align: center;
+    margin: 1px;
+}
+
+.burgerbutton {
+    background-color: white;
+}
+
+.burgerbutton:hover {
+    background-color: rgb(202, 199, 199);
+    color: white;
+}
+
+.burgerdropdown {
+    background-color: white;
+    border-style: solid;
+    border-top: 0;
+    border-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 100px;
+    padding: 10px;
+    position: absolute;
+    top: 116px;
+    right: 160px;
+    transition: all 125ms ease;
+    border-radius: 5px;
+}
+
+.burgerdropdown_closed {
+    transform: translatex(200%);
+}
+
+.burgerlink {
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+.burgerlink:hover {
+    color: white;
+    background-color: #008000;
+    background-blend-mode:hue ;
+}
+
+@media(max-width:750px) {
+
+    header {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    main {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .seperator {
+        margin-top: 40px;
+    }
+}
+
+@media(max-width:530px) {
+    .amount-portions {
+        width: auto;
+    }
+}
+
+@media(max-width:500px) {
+    body {
+        font-size: 16px;
+    }
+
+    .button {
+        font-size: 16px;
+    }
+
+    .receipt_attributes {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .profil {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .display_none_500 {
+        display: none;
+    }
+
+    #top_logo {
+        height: 80px;
+    }
 }

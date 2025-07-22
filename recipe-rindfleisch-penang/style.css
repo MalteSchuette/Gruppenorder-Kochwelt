@@ -90,12 +90,18 @@ footer {
     height: 50%;
 }
 
+#footer_socials {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 #req_links {
     display: flex;
     flex-direction: column;
     color: white;
     justify-content: center;
     text-align: center;
+    padding-left: 30px;
 }
 
 #req_links a {
