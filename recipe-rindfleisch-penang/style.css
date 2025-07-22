@@ -46,7 +46,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     color: white;
-    padding-bottom: 50px;
     padding-left: 160px;
     padding-right: 160px;
 
@@ -75,11 +74,12 @@ footer {
 #social_logos {
     display: flex;
     justify-content: space-around;
+    gap: 50px;
 }
 
 #footer_socials img {
     width: auto;
-    height: 25px;
+    height: 35px;
     object-fit: cover;
 }
 
@@ -93,6 +93,9 @@ footer {
 #footer_socials {
     padding-left: 30px;
     padding-right: 30px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
 }
 
 #req_links {
@@ -106,6 +109,7 @@ footer {
 
 #req_links a {
     color:white;
+    font-weight: 400;
 }
 
 main {
@@ -256,7 +260,7 @@ td {
 
 #footer_socials img {
     width: auto;
-    height: 25px;
+    height: 35px;
     object-fit: cover;
 }
 
@@ -351,7 +355,7 @@ hr {
 header {
     justify-content: space-between;
     align-items: center;
-}
+    }
 
     .burgermenu {
         display: block;
@@ -359,10 +363,30 @@ header {
 
 }
 
+@media(max-width:1030px) {
+
+    header {
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+
+    footer {
+        padding-left: 80px;
+        padding-right: 80px; 
+    }
+}
+
+
 @media(max-width:850px) {
     
     .display_none_850 {
         display: none;
+    }
+
+    #recipe_all_img {
+        flex-direction: column;
+        gap: 40px
+        
     }
 
 }
@@ -381,6 +405,37 @@ header {
 
     .seperator {
         margin-top: 40px;
+    }
+
+    #req_links {
+        padding-left: 0;
+    }
+
+    .burgerdropdown {
+        right: 50px;
+    }
+}
+
+@media(max-width:650px) {
+
+    footer {
+        flex-direction: column;
+    }
+
+    .seperator_footer {
+        display: none;
+    }
+
+    #footer_socials {
+        padding-left: 53px;
+    }
+
+    #req_links {
+        margin-bottom: 25px;
+    }
+
+    .footerlogo {
+        margin-top: 25px;
     }
 }
 
@@ -416,7 +471,17 @@ header {
         display: none;
     }
 
-    #top_logo {
-        height: 80px;
+    header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    main {
+        padding-left: 15px;
+        padding-right: 15px;    
+    }
+
+    .burgerdropdown {
+        right: 15px;
     }
 }
