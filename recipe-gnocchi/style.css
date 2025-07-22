@@ -9,6 +9,8 @@ body{
     font-weight: 400;
      font-style: normal;
     font-size: 20px;
+    position: relative;
+    
 
      }
     
@@ -45,6 +47,47 @@ nav {
     text-decoration-thickness: 5px;
 }
 
+.burgerbutton {
+    background-color: white;
+}
+
+.burgerbutton:hover {
+    background-color: rgb(202, 199, 199);
+    color: white;
+}
+
+.burgerdropdown {
+    background-color: white;
+    border-style: solid;
+    border-top: 0;
+    border-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 100px;
+    padding: 10px;
+    position: absolute;
+    top: 116px;
+    right: 160px;
+    transition: all 125ms ease;
+    border-radius: 5px;
+    position: fixed;
+}
+
+.burgerdropdown_closed {
+    transform: translatex(200%);
+}
+
+.burgerlink {
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+.burgerlink:hover {
+    color: white;
+    background-color: #008000;
+    background-blend-mode:hue ;
+}
 a {
     text-decoration: none;
     color: black;
@@ -179,4 +222,51 @@ a {
     padding-right: 160px;
 
  }
- 
+ @media(max-width:1114px) {
+
+    #nav_none {
+        display: none;
+    }
+
+header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .burgermenu {
+        display: block;
+    }
+.burgermenu {
+    display: none;
+    border-style: solid;
+    border-color: rgb(143, 140, 140);
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+}
+}
+
+@media(max-width:850px) {
+    
+    .display_none_850 {
+        display: none;
+    }
+
+}
+
+@media(max-width:750px) {
+
+    header {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    main {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .seperator {
+        margin-top: 40px;
+    }
+}
