@@ -7,6 +7,7 @@ body
 {
     font-family: 'Raleway';
     font-size: 20px;
+    
 }
 
 *
@@ -30,14 +31,14 @@ header
     justify-content: space-between;
     align-items: flex-end;
     box-sizing: border-box;
-    padding-left: 160px;
+    padding-left: 130px;
     padding-right: 160px;
     max-width: 1440px;
 }
 
 .logo
 {
-    height: 70px;
+    height: 90px;
     margin-bottom: 20px;
     margin-top: 20px;
     width: auto;
@@ -371,6 +372,7 @@ footer a
 
 #req_links a {
     color:white;
+    text-decoration: none;
 }
 
 .burger_line {
@@ -420,60 +422,26 @@ ul {
 }
 
 
-@media(max-width: 1020px)
+@media(max-width: 1030px)
 {
-    h1{
-        font-size: 28px;
+    footer {
+        padding-left: 80px;
+        padding-right: 80px; 
     }
 }
 
-@media(max-width: 933px)
+@media(max-width:1114px) 
 {
-    h1 
-    {
-        width: 65%;
-        top: 160px;
+
+    .first_nav {
+        display: none;
     }
 
-    .img_container
-    {
-        padding-top: 100px;
-    }
 
-    header
-    {
-        padding-right: 100px;
-        padding-left: 100px;
+    header {
+        justify-content: space-between;
+        align-items: center;
     }
-
-    main 
-    {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
-    footer 
-    {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-}
-
-@media(max-width: 849px)
-{
-    .footerlogo
-    {
-        height: 80px;
-    }
-
-    #logo_slogan
-    {
-        text-align: center;
-    }
-}
-
-@media(max-width: 786px)
-{
 
     h1 
     {
@@ -499,7 +467,7 @@ ul {
         background-color: transparent;
         position: fixed;
         right: 50px;
-        top: 40px;
+        top: 50px;
         width: 40px;
         height: 32px;
     } 
@@ -553,6 +521,58 @@ ul {
     {
         padding-left: 60px;
         padding-right: 60px;
+    }
+}
+
+@media(max-width: 1020px)
+{
+    h1{
+        font-size: 28px;
+    }
+}
+
+@media(max-width: 933px)
+{
+    h1 
+    {
+        width: 65%;
+        top: 160px;
+    }
+
+    .img_container
+    {
+        padding-top: 100px;
+    }
+
+    header
+    {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+
+    main 
+    {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    footer 
+    {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media(max-width: 849px)
+{
+    .footerlogo
+    {
+        height: 80px;
+    }
+
+    #logo_slogan
+    {
+        text-align: center;
     }
 }
 
@@ -805,10 +825,6 @@ ul {
 
 @media(max-width: 380px)
 {
-    .logo 
-    {
-        padding-left: 30px;
-    }
 
     .img_container
     {
@@ -853,7 +869,7 @@ ul {
     }
 }
 
-@media(max-width:355px)
+@media(max-width:358px)
 {
     h1 
     {
@@ -884,10 +900,11 @@ ul {
         width: 28px;
         height: 28px;
     }
-}
 
-@media(max-width: 345px)
-{
+    .logo
+    {
+        padding-left: 0;
+    }
     .input-wrapper
     {
         display: flex;
@@ -896,5 +913,36 @@ ul {
     label
     {
         padding-top: 8px;
+    }
+}
+
+@media(max-width: 343px)
+{
+    #crowd
+    {
+        height: auto;
+    }
+}
+
+@media(max-width: 324px)
+{
+    header
+    {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .burger_menu
+    {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media(max-width: 320px)
+{
+    header
+    {
+        padding-left: 2px;
     }
 }
