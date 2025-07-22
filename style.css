@@ -22,13 +22,14 @@ body {
 }
 
 .max_width
-{
-    width: 100%;
+{   ;
     box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
 }
 header {
-
     max-width: 1440px;
+    width:100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -242,6 +243,7 @@ footer {
     margin-bottom: 0;
     padding-bottom: 50px;
     font-weight: 500;
+    text-align: center;
 }
 
 .recipe_div_img {
