@@ -12,16 +12,30 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script>
+      function toggleburgermenu(){
+        document.getElementById("resp_menu").classList.toggle("burgerdropdown_closed")
+      }
+    </script>
   </head>
   <body>
     <header id="logo_center">
-      <a href="/recipe-rindfleisch-penang/recipe_rindfleisch_penang.html"><img id="top_logo" src="./img/logo.png" /></a>
+      <a href="/index.html"><img id="top_logo" src="./img/logo.png" /></a>
       <nav id="nav_none">
-        <a class="navlinks" href="/recipe-rindfleisch-penang/recipe_rindfleisch_penang.html">Start</a>
+        <a class="navlinks" href="/index.html">Start</a>
         <a class="navlinks" href="rezept_dennis.html">Rezept des Tages</a>
         <a class="navlinks" href="#contact">Kontakt</a>
         <a class="navlinks" href="/impressum.html">Impressum</a>
       </nav>
+      <button onclick="toggleburgermenu()" class="burgermenu burgerbutton"><div class="linien"><hr></div>
+      <div class="linien"><hr></div>
+      <div class="linien"><hr></div></button>
+      <div id="resp_menu" class="burgerdropdown burgerdropdown_closed">
+        <a class="burgerlink" href="/index.html">Start</a>
+        <a class="burgerlink" href="/recipe-gnocchi/rezept_dennis.html">Rezept des Tages</a>
+        <a class="burgerlink" href="/#contact">Kontakt</a>
+        <a class="burgerlink" href="/impressum.html">Impressum</a>
+      </div>
     </header>
     <main>
       <h1>Gnocchi-Gemüsepfanne</h1>
@@ -54,7 +68,7 @@
       <div class="seperator"></div>
       <div class="menge">
         <label id="zutaten">Zutaten für</label>
-        <input id="amount" type="number" min="1" max="9" />
+        <input id="amount" type="number" min="1" max="99" />
         <input class="button" type="button" value="Portionen" />
       </div>
       <table>
