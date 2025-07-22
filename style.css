@@ -11,7 +11,6 @@ body {
     font-style: normal;
     font-size: 20px;
     position: relative;
-    overflow-x: hidden;
 }
 
 /* Header ab hier */
@@ -153,9 +152,9 @@ footer {
     justify-content: space-between;
     align-items: center;
     color: white;
-    padding-bottom: 50px;
     padding-left: 160px;
     padding-right: 160px;
+
 }
 
 #logo_slogan {
@@ -181,11 +180,12 @@ footer {
 #social_logos {
     display: flex;
     justify-content: space-around;
+    gap: 50px;
 }
 
 #footer_socials img {
     width: auto;
-    height: 25px;
+    height: 35px;
     object-fit: cover;
 }
 
@@ -210,6 +210,8 @@ footer {
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
 }
 
 #req_links a {
@@ -316,13 +318,8 @@ h2 {
 
 .s3_h2_padding_top {
     padding-top: 50px;
+    text-align: center;
 }
-
-@media(max-width:1114px) {
-
-    #nav_none {
-        display: none;
-    }
 
 .burgermenu {
     display: none;
@@ -332,27 +329,6 @@ h2 {
     width: 25px;
     border-radius: 100%;
 }
-
-header {
-    justify-content: space-between;
-    align-items: center;
-}
-
-    .burgermenu {
-        display: block;
-    }
-
-}
-
-@media(max-width:850px) {
-    
-    .display_none_850 {
-        display: none;
-    }
-
-}
-
-
 
 .linien{
     display: flex;
@@ -384,7 +360,7 @@ hr {
     width: 180px;
     height: 100px;
     padding: 10px;
-    position: absolute;
+    position: fixed;
     top: 116px;
     right: 160px;
     transition: all 125ms ease;
@@ -406,6 +382,88 @@ hr {
     background-blend-mode:hue ;
 }
 
+
+@media(max-width:1114px) {
+
+    #nav_none {
+        display: none;
+    }
+
+
+    header {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .burgermenu {
+        display: block;
+    }
+
+
+
+}
+
+@media(max-width:1030px) {
+    .dennis_recept {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .p-margin-bot {
+        margin-bottom: 20px;
+        width: 450px;
+    }
+
+    #recipe_ideas {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    
+    .jeromes_recept {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    header {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .burgerdropdown {
+        right: 80px;
+    }
+
+    footer {
+        padding-left: 80px;
+        padding-right: 80px; 
+    }
+}
+
+
+@media(max-width:850px) {
+    
+    .display_none_850 {
+        display: none;
+    }
+
+    #recipe_all_img {
+        flex-direction: column;
+        gap: 40px
+        
+    }
+
+}
+
+
+
+
+
 @media(max-width:750px) {
 
     header {
@@ -413,13 +471,58 @@ hr {
         padding-right: 50px;
     }
 
-    main {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
 
     .seperator {
         margin-top: 40px;
+    }
+
+    #req_links {
+        padding-left: 0;
+    }
+
+    .burgerdropdown {
+        right: 50px;
+    }
+}
+
+@media(max-width:650px) {
+
+    footer {
+        flex-direction: column;
+    }
+
+    .seperator_footer {
+        display: none;
+    }
+
+    #footer_socials {
+        padding-left: 53px;
+    }
+
+    #req_links {
+        margin-bottom: 25px;
+    }
+
+    .footerlogo {
+        margin-top: 25px;
+    }
+
+    .s3-text-img {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .dish {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .recept_img {
+        padding-bottom: 0;
+    }
+
+    .recept_text {
+        text-align: center;
     }
 }
 
@@ -429,9 +532,18 @@ hr {
     }
 }
 
-@media(max-width:500px) {
+@media(max-width:560px) {
     body {
         font-size: 16px;
+    }
+
+    .dish1 {
+        height: 200px;
+        width: 300px;
+    }
+
+    .p-margin-bot {
+        width: 300px;
     }
 
     .button {
@@ -447,15 +559,16 @@ hr {
         flex-direction: column;
     }
 
-    footer {
-        flex-direction: column;
-    }
-
     .display_none_500 {
         display: none;
     }
 
-    #top_logo {
-        height: 80px;
+    header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .burgerdropdown {
+        right: 15px;
     }
 }
