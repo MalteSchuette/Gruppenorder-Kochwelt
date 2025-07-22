@@ -43,7 +43,6 @@ header
     margin-top: 20px;
     width: auto;
     transform: scale(0.8);
-    /* padding-left: 150px; */
 }
 
 .logo:hover
@@ -67,7 +66,6 @@ header
     justify-content: center;
     align-items: center;
     gap: 15px;
-    /* padding-right: 160px; */
 }
 
 .list_anchor 
@@ -123,8 +121,6 @@ h1
     flex-direction: column;
     justify-content: center;
     align-items: anchor-center;
-    /* padding-left: 160px;
-    padding-right: 160px; */
     padding-top: 50px;
 }
 
@@ -151,7 +147,6 @@ h2
 {
     display: flex;
     gap: 10px;
-    /* padding-left: 160px; */
     padding-bottom: 32px;
 }
 
@@ -185,9 +180,7 @@ h2
 .portion_controls
 {
     display: flex;
-    /* padding-left: 160px; */
     padding-top: 16px;
-    /* padding-right: 160px; */
 }
 
 h3
@@ -247,8 +240,6 @@ h3
     grid-template-columns: 1fr;
     list-style-type: none;
     margin-top: 16px;
-    /* padding-left: 160px;
-    padding-right: 160px; */
 }
 
 .list_white
@@ -271,22 +262,12 @@ h3
 
 .preparation
 {
-    /* padding-left: 160px;
-    padding-right: 160px; */
     padding-top: 32px;
 }
-
-/* p
-{
-    padding-left: 160px;
-    padding-right: 160px;
-} */
-
 
 .autor
 {
     padding-top: 24px;
-    /* padding-left: 160px; */
     padding-bottom: 50px;
 }
 
@@ -396,7 +377,7 @@ footer a
 .burger_line {
     height: 4px;
     background-color: black;
-    width: 32px;
+    width: 24px;
     display: flex;
     margin-top: 4px;
 }
@@ -897,6 +878,12 @@ ul {
     {
         padding-left: 8px;
         padding-right: 8px;
+    }
+
+    .burger_menu
+    {
+        width: 28px;
+        height: 28px;
     }
 }
 
