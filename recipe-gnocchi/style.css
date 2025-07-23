@@ -267,7 +267,12 @@ td {
     object-fit: cover;
     border-radius: 100%;
 }
-
+.profil_img{
+   width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+}
 
 .seperator_footer {
     background-color: #efefef27 ;
