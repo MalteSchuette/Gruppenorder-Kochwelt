@@ -65,11 +65,12 @@ a {
 .main_max_width
 {
     width: 100%;
+    justify-content: center;
 }
 
 main
 {
-    max-width: 1440p;
+    max-width: 1440px;
 }
 .dennis_recept{
     display: flex;
