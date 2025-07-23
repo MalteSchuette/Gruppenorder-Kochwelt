@@ -20,16 +20,21 @@ body {
     margin-bottom: 20px;
     margin-top: 20px;
 }
+.max-width {
+    display:flex;
+    justify-content: center;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.2);
+}
 
 header {
+    max-width: 1440px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.2);
     box-sizing: border-box;
-    padding-left: 160px;
-    padding-right: 160px;
+    margin-left: 160px;
+    margin-right: 160px;
 }
 
 nav {
@@ -64,6 +69,10 @@ a {
     justify-content: center;
     align-items: center;
 
+}
+
+.contact_form {
+    margin: 15px;
 }
 
 .contact_form {
@@ -134,22 +143,29 @@ h1 {
     border-style: none;
     font-weight: 500;
     width: 218px;
+    text-align: center;
 }
 
 
 
-
+.footer_max_width {
+    display: flex;
+    justify-content: center;
+    background-color: #403B3B;
+}
 
 footer {
     background-color: #403B3B;
+    max-width: 1440px;
+    width: 100%;
     height: 250px;
     margin:0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
-    padding-left: 160px;
-    padding-right: 160px;
+    margin-left: 160px;
+    margin-right: 160px;
 }
 
 #logo_slogan {
@@ -304,8 +320,13 @@ hr {
 @media(max-width:1030px) {
 
     footer {
-        padding-left: 80px;
-        padding-right: 80px; 
+        margin-left: 50px;
+        margin-right: 50px; 
+    }
+
+    header {
+        margin-left: 50px;
+        margin-right: 50px;
     }
 }
 
@@ -326,8 +347,8 @@ hr {
 @media(max-width:750px) {
 
     header {
-        padding-left: 50px;
-        padding-right: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
     }
 
     main {
@@ -404,8 +425,8 @@ hr {
     }
 
     header {
-        padding-left: 15px;
-        padding-right: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
     main {

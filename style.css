@@ -21,15 +21,15 @@ body {
     margin-top: 20px;
 }
 
-.max_width
-{   ;
+.max_width {
     box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
 }
+
 header {
     max-width: 1440px;
-    width:100%;
+    width:100%; 
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
