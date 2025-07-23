@@ -67,11 +67,15 @@ a {
     width: 100%;
     justify-content: center;
 }
-
 main
 {
     max-width: 1440px;
 }
+ .part_start{
+   
+    display: flex;
+    justify-content: center;
+ }
 .dennis_recept{
     display: flex;
     align-items: flex-start;
@@ -80,6 +84,9 @@ main
     padding-right: 160px;
     padding-top: 80px;
     padding-bottom: 80px;
+     max-width: 1440px;
+     width: 100%;
+
 }
 .recept_img1{
   flex: 1;
