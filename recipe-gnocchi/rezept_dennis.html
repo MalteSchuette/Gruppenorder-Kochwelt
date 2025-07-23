@@ -1,156 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kochwelt</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="icon" href="./img/logo_small.png" type="image/png">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <title>Rezept:Gnocchi-Gemüsepfanne</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./img/logo_small.png" type="image/png" />
     <script>
-      function toggleburgermenu(){
-        document.getElementById("resp_menu").classList.toggle("burgerdropdown_closed")
+      function toggleburgermenu() {
+        document
+          .getElementById("resp_menu")
+          .classList.toggle("burgerdropdown_closed");
       }
     </script>
   </head>
   <body>
-    <section class="max_width">
-    <header id="logo_center">
-      <a href="/index.html"><img id="top_logo" src="./img/logo.png" /></a>
-      <nav id="nav_none">
-        <a class="navlinks" href="/index.html">Start</a>
-        <a class="navlinks" href="rezept_dennis.html">Rezept des Tages</a>
-        <a class="navlinks" href="/Kontaktpage/contact.html">Kontakt</a>
-        <a class="navlinks" href="/impressum.html">Impressum</a>
-      </nav>
-      <button onclick="toggleburgermenu()" class="burgermenu burgerbutton"><div class="linien"><hr></div>
-      <div class="linien"><hr></div>
-      <div class="linien"><hr></div></button>
-      <div id="resp_menu" class="burgerdropdown burgerdropdown_closed">
-        <a class="burgerlink" href="/index.html">Start</a>
-        <a class="burgerlink" href="/recipe-gnocchi/rezept_dennis.html">Rezept des Tages</a>
-        <a class="burgerlink" href="/#contact">Kontakt</a>
-        <a class="burgerlink" href="/impressum.html">Impressum</a>
-      </div>
-    </header>
+    <section class="max-width-header">
+      <header id="logo_center">
+        <a href="/index.html"><img id="top_logo" src="./img/logo.png" /></a>
+        <nav id="nav_none">
+          <a class="navlinks" href="/index.html">Start</a>
+          <a
+            class="navlinks"
+            href="/recipe-rindfleisch-penang/recipe_rindfleisch_penang.html"
+            >Rezept des Tages</a
+          >
+          <a class="navlinks" href="/Kontaktpage/contact.html">Kontakt</a>
+          <a class="navlinks" href="/impressum.html">Impressum</a>
+        </nav>
+        <button onclick="toggleburgermenu()" class="burgermenu burgerbutton">
+          <div class="linien"><hr /></div>
+          <div class="linien"><hr /></div>
+          <div class="linien"><hr /></div>
+        </button>
+        <div id="resp_menu" class="burgerdropdown burgerdropdown_closed">
+          <a class="burgerlink" href="/index.html">Start</a>
+          <a
+            class="burgerlink"
+            href="/recipe-rindfleisch-penang/recipe_rindfleisch_penang.html"
+            >Rezept des Tages</a
+          >
+          <a class="burgerlink" href="/Kontaktpage/contact.html">Kontakt</a>
+          <a class="burgerlink" href="/impressum.html">Impressum</a>
+        </div>
+      </header>
     </section>
-    <section class="main_max_width">
-    <main>
-      <h1>Gnocchi-Gemüsepfanne</h1>
-      <div class="pita">
-        <img src="./img/icons/Gnocchi-Gemuese-Pfanne_09.jpg" alt="Gnocchi-Gemüsepfanne" />
-      </div>
-      <div class="knowhow">
-        <div class="info">
+    <section class="main-max-width">
+      <main>
+        <h1>Gnocchi-Gemüsepfanne</h1>
+        <div class="pita">
           <img
-            class="bilders"
-            src="./img/icons/clock-regular.svg"
-            alt="Zeit"
-          />10 Min.
+            src="./img/icons/Gnocchi-Gemuese-Pfanne_09.jpg"
+            alt="Bild von Pang Nang Curry auf einem Teller"
+          />
         </div>
-        <div class="info">
-          <img
-            class="bilders"
-            src="./img/icons/brain-solid.svg"
-            alt="simpel"
-          />Simpel
+        <div class="receipt_attributes">
+          <div class="receipt_attributes_single">
+            <img
+              class="attribute_img"
+              src="./img/icons/clock-regular.svg"
+              alt="Icon einer Uhr"
+            />
+            10 min
+          </div>
+          <div class="receipt_attributes_single">
+            <img
+              class="attribute_img"
+              src="./img/icons/brain-solid.svg"
+              alt="Icon eines Gehirns"
+            />
+            simple
+          </div>
+          <div class="receipt_attributes_single">
+            <img
+              class="attribute_img"
+              src="./img/icons/calendar-alt-regular.svg"
+              alt="Icon eines Kalenders"
+            />
+            16.07.2025
+          </div>
         </div>
-        <div class="info">
-          <img
-            class="bilders"
-            src="./img/icons/calendar-alt-regular.svg"
-            alt="calender"
-          />16.07.2025
+        <div class="seperator"></div>
+        <div class="amount-portions">
+          <label id="amount-label" for="amount">Zutaten für</label>
+          <input id="amount" type="number" min="1" max="99" placeholder="1" />
+          <input class="button" type="button" value="Portionen" />
         </div>
-      </div>
-      <div class="seperator"></div>
-      <div class="menge">
-        <label id="zutaten">Zutaten für</label>
-        <input id="amount" type="number" min="1" max="99" placeholder="1"/>
-        <input class="button" type="button" value="Portionen" />
-      </div>
-      <table>
-        <tbody>
-        <tr>
-          <td>1 Beutel Gnocchi (ca.500g)</td>
-        </tr>
-        <tr>
-          <td>etwas Öl zum Braten</td>
-        </tr>
-        <tr>
-          <td>1 Zwiebel</td>
-        </tr>
-        <tr>
-          <td>1 Handvoll Cocktailtomaten</td>
-        </tr>
-        <tr>
-          <td>1 Zucchini</td>
-        </tr>
-        <tr>
-          <td>1 Aubergine</td>
-        </tr>
-        <tr>
-          <td>1 Bund Petersilie</td>
-        </tr>
-        <tr>
-          <td>Salz und Pfeffer</td>
-        </tr>
-        <tr>
-          <td>1 TL Honig oder Zucker</td>
-        </tr>
-        </tbody>
-      </table>
-      <h2>Zubereitung</h2>
-      <div class="knowhow2">
-      <div class="info">
-          <img
-            class="bilders"
-            src="./img/icons/clock-regular.svg" alt="Zeit" />ca. 10 Minuten
-      </div>
-      <div class="info">
-          <img
-            class="bilders"
-            src="./img/icons/clock-regular.svg" alt="Zeit"/>Gesamtzeit ca. 30 Minuten
-      </div>
-      </div>
-      </div>
-      <p>Die Gnocchi in einer heißen Pfanne im Olivenöl etwas anbraten. Die Zwiebel würfeln, zu den heißen Gnocchi geben und glasig anschwitzen. Das Gemüse waschen und in kleine Würfel schneiden. Die Cocktailtomaten halbieren. Das gesamte Gemüse zu den Gnocchi in die Pfanne geben und auf mittlerer Stufe dünsten. Nach ca. 15 Min. ist das Gemüse gar. Die Petersilie hacken und in die Pfanne geben. Zum Schluss mit Salz, Pfeffer und Honig abschmecken.</p>
-    <br>
-      <h3>Rezept erstellt von</h3>
-    <div class="profile">
-    <img class="profilebild" src="./img/profile.png"/>Dennis
-    </div>
-    </main>
+        <table>
+          <tr>
+            <td class="td_background">1 Beutel Gnocchi (ca. 500g)</td>
+          </tr>
+          <tr>
+            <td>etwas Öl zum Braten</td>
+          </tr>
+          <tr>
+            <td class="td_background">1 Zwiebel</td>
+          </tr>
+          <tr>
+            <td>1 Handvoll Cocktailtomaten</td>
+          </tr>
+          <tr>
+            <td class="td_background">
+              1 Zucchini
+            </td>
+          </tr>
+          <tr>
+            <td>1 Aubergine</td>
+          </tr>
+          <tr>
+            <td class="td_background">  Bund Ptersilie</td>
+          </tr>
+          <tr>
+            <td>Salz und Pfeffer</td>
+          </tr>
+          <tr>
+            <td class="td_background">1 TL Honig oder Zucker</td>
+          </tr>
+        </table>
+        <div>
+          <h2>Zubereitung</h2>
+          <div class="receipt_attributes">
+            <div class="receipt_attributes_single">
+              <img
+                class="attribute_img"
+                src="./img/icons/clock-regular.svg"
+                alt="Icon einer Uhr"
+              />
+              ca. 10 min
+            </div>
+            <div class="receipt_attributes_single">
+              <img
+                class="attribute_img"
+                src="./img/icons/clock-regular.svg"
+                alt="Icon einer Uhr"
+              />
+              Gesamtzeit ca. 30 min
+            </div>
+          </div>
+          <p>
+            Die Gnocchi in einer heißen Pfanne im Olivenöl etwas anbraten. Die Zwiebel würfeln, zu den heißen Gnocchi geben und glasig anschwitzen. Das Gemüse waschen und in kleine Würfel schneiden. Die Cocktailtomaten halbieren. Das gesamte Gemüse zu den Gnocchi in die Pfanne geben und auf mittlerer Stufe dünsten. Nach ca. 15 Min. ist das Gemüse gar. Die Petersilie hacken und in die Pfanne geben. Zum Schluss mit Salz, Pfeffer und Honig abschmecken.
+          </p>
+        </div>
+
+        <div>
+          <h3>Rezept erstellt von</h3>
+          <div class="profil">
+            <img
+              id="profil-pic"
+              alt="Profilbild"
+            />
+            Malte
+          </div>
+        </div>
+      </main>
     </section>
     <section class="footer_max_width">
-    <footer>
-      <div id="logo_slogan">
-        <picture>
-          <source class="footerlogo" srcset="/img/logo_small_white.png" media="(max-width: 850px)">
-          <source class="footerlogo" srcset="/img/logo_white.png" media="(max-width: 1440px)">
-          <img class="footerlogo" src="/img/logo_white.png" alt="Logo von Kochwelt">
-        </picture>
-        <span id="slogan" class="display_none_850">-Rezepte, die dein Herz erwärmen.-</span>
-      </div>
-      <div class="seperator_footer display_none_500"></div>
-      <div id="footer_socials">
+      <footer>
+        <div id="logo_slogan">
+          <picture>
+            <source
+              class="footerlogo"
+              srcset="./img/logo_small_white.png"
+              media="(max-width: 850px)"
+            />
+            <source
+              class="footerlogo"
+              srcset="./img/logo_white.png"
+              media="(max-width: 1440px)"
+            />
+            <img
+              class="footerlogo"
+              src="./img/logo_white.png"
+              alt="Logo von Kochwelt"
+            />
+          </picture>
+          <span id="slogan" class="display_none_850"
+            >-Rezepte, die dein Herz erwärmen.-</span
+          >
+        </div>
+        <div class="seperator_footer display_none_500"></div>
+        <div id="footer_socials">
           <div id="social_logos">
-          <a href="http://www.facebook.com"> <img src="/img/facebook_white.png" alt="Facebooklogo"> </a>
-          <a href="http://www.instagram.com"> <img src="/img/instagram_white.png" alt="Instagramlogo"> </a>
-          <a href="http://www.twitter.com"> <img src="/img/twitter_white.png" alt="Facebooklogo"> </a>
-        </div>  
-      </div>
-      <div class="seperator_footer display_none_500"></div>
-      <div id="req_links">
-        <a href="/impressum.html">Impressum</a>
-        <a href="/datenschutz.html">Datenschutz</a>
-      </div>
-    </footer>
+            <a href="http://www.facebook.com">
+              <img src="./img/facebook_white.png" alt="Facebooklogo" />
+            </a>
+            <a href="http://www.instagram.com">
+              <img src="./img/instagram_white.png" alt="Instagramlogo" />
+            </a>
+            <a href="http://www.twitter.com">
+              <img src="./img/twitter_white.png" alt="Facebooklogo" />
+            </a>
+          </div>
+        </div>
+        <div class="seperator_footer display_none_500"></div>
+        <div id="req_links">
+          <a href="/impressum.html">Impressum</a>
+          <a href="/datenschutz.html">Datenschutz</a>
+        </div>
+      </footer>
     </section>
   </body>
 </html>
