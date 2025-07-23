@@ -1,155 +1,228 @@
 <!DOCTYPE html>
 <html lang="de">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Rezept des Tages</title>
-
-        <link rel="icon" href="./img/logo_small.png" type="image/svg+xml">
-        <link rel="stylesheet" href="style_jerome.css">
-        <script src="script.js"></script>
-    </head>
-    <body>  
-
-        
-        <button class="burger_menu" onclick="toggleMenu()">
-                <span class="burger_line"></span>
-                <span class="burger_line"></span>
-                <span class="burger_line"></span>
-        </button>
-
-        <nav class="d_none" id="menu" onclick="toggleMenu()">
-            <ul>
-                <li><a class="burger_menu_a" href="../index.html">Start</a></li>
-                <li><a class="burger_menu_a" href="../recipe-rindfleisch-penang/recipe_rindfleisch_penang.html">Rezept des Tages</a></li>
-                <li><a class="burger_menu_a" href="/Kontaktpage/contact.html">Kontakt</a></li>
-                <li><a class="burger_menu_a" href="/Impressum/impressum.html">Impressum</a></li>
-            </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezept Rindfleisch Penang</title>
+    <link rel="stylesheet" href="./style_jerome.css" />
+    <link rel="icon" href="./img/logo_small.png" type="image/png" />
+    <script>
+      function toggleburgermenu() {
+        document
+          .getElementById("resp_menu")
+          .classList.toggle("burgerdropdown_closed");
+      }
+    </script>
+  </head>
+  <body>
+    <section class="max-width-header">
+      <header id="logo_center">
+        <a href="/index.html"><img id="top_logo" src="./img/logo.png" /></a>
+        <nav id="nav_none">
+          <a class="navlinks" href="/index.html">Start</a>
+          <a
+            class="navlinks"
+            href="/recipe-rindfleisch-penang/recipe_rindfleisch_penang.html"
+            >Rezept des Tages</a
+          >
+          <a class="navlinks" href="/Kontaktpage/contact.html">Kontakt</a>
+          <a class="navlinks" href="/Impressum/impressum.html">Impressum</a>
         </nav>
-        
-        <section class="max_width">
-            <header>
-                <a href="../index.html"><img class="logo" src="./img/logo.png" alt="Kochwelt Logo"></a>
-                <nav class="first_nav">
-                    <ul class="navlist">
-                        <li class="list_anchor"><a href="../index.html">Start</a></li>
-                        <li class="list_anchor"><a href="../recipe-rindfleisch-penang/recipe_rindfleisch_penang.html">Rezept des Tages</a></li>
-                        <li class="list_anchor"><a href="/Kontaktpage/contact.html">Kontakt</a></li>
-                        <li class="list_anchor"><a href="/Impressum/impressum.html" target="_blank">Impressum</a></li>
-                    </ul>   
-                </nav>
-            </header>
-        </section>
-        
-        <section class="main_max_width">
-            <main> 
-                <article class="img_container">
-                    <h1>Jägerschnitzel mit Nudeln und Tomatensoße</h1> 
-                    <img class="my_img" src="./img/rezept.png" alt="Jägerschnitzel mit Nudeln und Tomatensoße">
-                </article>
-                <div class="icons_container">
-                    <div class="icons">
-                    <img src="./img/icons/clock-regular.svg" alt="Time of the Lenght">
-                    <span>50 Min.</span>
-                    </div>
-                    <div class="icons">
-                        <img src="./img/icons/brain-solid.svg" alt="Difficultly level">
-                        <span>Simpel</span>
-                    </div>
-                    <div class="icons">
-                        <img src="./img/icons/calendar-alt-regular.svg" alt="Date">
-                        <span>16.07.2025</span>
-                    </div>
-                </div>
-                <div class="seperator"></div>
+        <button onclick="toggleburgermenu()" class="burgermenu burgerbutton">
+          <div class="linien"><hr /></div>
+          <div class="linien"><hr /></div>
+          <div class="linien"><hr /></div>
+        </button>
+        <div id="resp_menu" class="burgerdropdown burgerdropdown_closed">
+          <a class="burgerlink" href="/index.html">Start</a>
+          <a
+            class="burgerlink"
+            href="/recipe-rindfleisch-penang/recipe_rindfleisch_penang.html"
+            >Rezept des Tages</a
+          >
+          <a class="burgerlink" href="/Kontaktpage/contact.html">Kontakt</a>
+          <a class="burgerlink" href="/Impressum/impressum.html">Impressum</a>
+        </div>
+      </header>
+    </section>
+    <section class="main-max-width">
+      <main>
+        <h1>Jägerschnitzel mit Nudeln und Tomatensoße</h1>
+        <div class="curryimg">
+          <img
+            src="./img/rezept.png"
+            alt="Bild von Jägerschnitzel mit Nudeln und Tomatensoße auf einem Teller"
+          />
+        </div>
+        <div class="receipt_attributes">
+          <div class="receipt_attributes_single">
+            <img
+              class="attribute_img"
+              src="./img/icons/clock-regular.svg"
+              alt="Icon einer Uhr"
+            />
+            50 min
+          </div>
+          <div class="receipt_attributes_single">
+            <img
+              class="attribute_img"
+              src="./img/icons/brain-solid.svg"
+              alt="Icon eines Gehirns"
+            />
+            simple
+          </div>
+          <div class="receipt_attributes_single">
+            <img
+              class="attribute_img"
+              src="./img/icons/calendar-alt-regular.svg"
+              alt="Icon eines Kalenders"
+            />
+            16.07.2025
+          </div>
+        </div>
+        <div class="seperator"></div>
+        <div class="amount-portions">
+          <label id="amount-label" for="amount">Zutaten für</label>
+          <input id="amount" type="number" min="1" placeholder="1" />
+          <input class="button" type="button" value="Portionen" />
+        </div>
+        <table>
+          <tr>
+            <td class="td_background">4 dicke Scheiben Jagdwurst</td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="td_background">4 EL Öl (geschmacksneutral)</td>
+          </tr>
+          <tr>
+            <td>5 EL Semmelbrösel</td>
+          </tr>
+          <tr>
+            <td class="td_background">
+              2 EL Mehl
+            </td>
+          </tr>
+          <tr>
+            <td>1 Ei</td>
+          </tr>
+          <tr>
+            <td class="td_background">Salz und Pfeffer</td>
+          </tr>
+          <tr>
+            <td>400g Spirelli Nudeln</td>
+          </tr>
+          <tr>
+            <td class="td_background">1/2 TL Zucker</td>
+          </tr>
+          <tr>
+            <td>200g Ketchup</td>
+          </tr>
+          <tr>
+            <td class="td_background">1 TL Mehl</td>
+          </tr>
+          <tr>
+            <td>2 EL Tomatenmark</td>
+          </tr>
+          <tr>
+            <td class="td_background">1 EL Butter</td>
+          </tr>
+          <tr>
+            <td>1 Zwiebel</td>
+          </tr>
+        </table>
+        <div>
+          <h2>Zubereitung</h2>
+          <div class="receipt_attributes">
+            <div class="receipt_attributes_single">
+              <img
+                class="attribute_img"
+                src="./img/icons/clock-regular.svg"
+                alt="Icon einer Uhr"
+              />
+              ca. 50 min
+            </div>
+            <div class="receipt_attributes_single">
+              <img
+                class="attribute_img"
+                src="./img/icons/clock-regular.svg"
+                alt="Icon einer Uhr"
+              />
+              Gesamtzeit ca. 50 min
+            </div>
+          </div>
+          <p>   Begonnen wird mit der Nudelsoße.<br>
+                Dazu die Zwiebel in feine Würfel schneiden und in Butter in einem Topf glasig dünsten.<br>
+                Anschließend das Mehl hinzugeben und unter Rühren kurz anschwitzen.<br>
+                Das Ganze mit 100ml Wasser und dem Tomatenmark auffüllen.<br>
+                Zu guter letzt den Ketchup dazugeben und anschließend etwa 10 Minuten köcheln lassen.<br>
+                Alles entsprechend mit Pfeffer, Salz und Zucker verfeinern und abschmecken.<br>
+                Während des Köchelns der Soße können die Nudeln nach der Anleitung auf der Verpackung gekocht werden.<br>
+                Für die Zubereitung der Jägerschnitzel das Mehl in eine Schüssel füllen. Anschließend das Ei in eine andere Schüssel füllen und mit Pfeffer und Salz würzen und verquirlen.<br>
+                Weiterhin die Semmelbröel auf einen tiefen Teller ausschütten und breit streichen.<br>
+                Anschließend die Jagdwurstscheiben zuerst in Mehl, dann im Ei und zum Schluss in den Semmelbröseln wenden.<br>
+                Nachdem alle Scheiben vorbereitet sind, etwas Öl in einer Pfanne erhitzen und die Wurstscheiben darin von beiden Seiten knusprig anbraten.<br>
+                Nach dem Braten alle Jägerschnitzel auf Küchenpapier abtropfen lassen und mit den vorbereiteten Nudeln und der Tomatensoße servieren.</p>
+        </div>
 
-                <section class="portion_controls">
-                        <div class="input-wrapper">
-                            <label for="crowd">Zutaten für</label>
-                            <input id="crowd" type="number" min="1" value="4">
-                            <button class="btn">Portionen</button>
-                        </div>
-                </section>
-                <section class="ingredients_list">
-                    <ul>
-                        <li class="list_shadow">4 dicke Scheiben Jagdwurst</li>
-                        <li class="list_white">4 EL Öl (geschmacksneutral)</li>
-                        <li class="list_shadow">5 EL Semmelbrösel</li>
-                        <li class="list_white">2 EL Mehl</li>
-                        <li class="list_shadow">1 Ei</li>
-                        <li class="list_white">Salz und Pfeffer</li>
-                        <li class="list_shadow">400g Spirelli Nudeln</li>
-                        <li class="list_white">1/2 TL Zucker</li>
-                        <li class="list_shadow">200g Ketchup</li>
-                        <li class="list_white">1 TL Mehl</li>
-                        <li class="list_shadow">2 EL Tomatenmark</li>
-                        <li class="list_white">1 EL Butter</li>
-                        <li class="list_shadow">1 Zwiebel</li>
-                    </ul>
-                </section>
-                <article class="preparation">
-                    <h2>Zubereitung</h2>
-                </article>
-                <div class="icons_container">
-                    <div class="icons">
-                        <img src="./img/icons/clock-regular.svg" alt="Time of the Lenght">
-                        <span>ca. 50 Minuten</span>
-                    </div>
-                    <div class="icons">
-                        <img src="./img/icons/clock-regular.svg" alt="Time of the Lenght">
-                        <span>Gesamtdauer ca. 50 Minuten</span>
-                    </div>
-                </div>
-                <article class="instructions">
-                    <p>Begonnen wird mit der Nudelsoße.<br>
-                    Dazu die Zwiebel in feine Würfel schneiden und in Butter in einem Topf glasig dünsten.<br>
-                    Anschließend das Mehl hinzugeben und unter Rühren kurz anschwitzen.<br>
-                    Das Ganze mit 100ml Wasser und dem Tomatenmark auffüllen.<br>
-                    Zu guter letzt den Ketchup dazugeben und anschließend etwa 10 Minuten köcheln lassen.<br>
-                    Alles entsprechend mit Pfeffer, Salz und Zucker verfeinern und abschmecken.<br>
-                    Während des Köchelns der Soße können die Nudeln nach der Anleitung auf der Verpackung gekocht werden.<br>
-                    Für die Zubereitung der Jägerschnitzel das Mehl in eine Schüssel füllen. Anschließend das Ei in eine andere Schüssel füllen und mit Pfeffer und Salz würzen und verquirlen.<br>
-                    Weiterhin die Semmelbröel auf einen tiefen Teller ausschütten und breit streichen.<br>
-                    Anschließend die Jagdwurstscheiben zuerst in Mehl, dann im Ei und zum Schluss in den Semmelbröseln wenden.<br>
-                    Nachdem alle Scheiben vorbereitet sind, etwas Öl in einer Pfanne erhitzen und die Wurstscheiben darin von beiden Seiten knusprig anbraten.<br>
-                    Nach dem Braten alle Jägerschnitzel auf Küchenpapier abtropfen lassen und mit den vorbereiteten Nudeln und der Tomatensoße servieren.</p>
-                </article>
-                <section class="autor">
-                    <h3>Rezept erstellt von</h3>
-                    <article class="profile_img">
-                        <img src="./img/autor.jpg" alt="Picture from Autor">
-                        <span>Jermaine Jérôme</span>
-                    </article>
-                </section>
-            </main>
-        </section>
-        
-
-        <section class="footer_max_width">
-            <footer> 
-                <div id="logo_slogan">
-                    <picture>
-                    <source class="footerlogo" srcset="img\logo_small_white.png" media="(max-width: 850px)">
-                    <source class="footerlogo" srcset="./img/logo_white.png" media="(max-width: 1440px)">
-                    <img class="footerlogo" src="./img/logo_white.png" alt="Logo von Kochwelt">
-                    </picture>
-                    <span id="slogan" class="display_none_850">-Rezepte, die dein Herz erwärmen.-</span>
-                </div>
-                <div class="seperator_footer display_none_500"></div>
-                <div id="footer_socials">
-                    <span id="slogan_socials">Jetzt auch auf Social Media!</span>
-                    <div id="social_logos">
-                    <a href="http://www.facebook.com"> <img src="./img/facebook_white.png" alt="Facebooklogo"> </a>
-                    <a href="http://www.instagram.com"> <img src="./img/instagram_white.png" alt="Instagramlogo"> </a>
-                    <a href="http://www.twitter.com"> <img src="/img/X_logo_white.png" alt="Facebooklogo"> </a>
-                    </div>  
-                </div>
-                <div class="seperator_footer display_none_500"></div>
-                    <div id="req_links">
-                        <a href="/Impressum/impressum.html">Impressum</a>
-                        <a href="/Datenschutz/Datenschutz.html">Datenschutz</a>
-                </div>
-            </footer>
-        </section>
-    </body>
+        <div>
+          <h3>Rezept erstellt von</h3>
+          <div class="profil">
+            <img
+              id="profil-pic"
+              src="./img/autor.jpg"
+              alt="Profilbild"
+            />
+            Jermaine Jérôme 
+          </div>
+        </div>
+      </main>
+    </section>
+    <section class="footer_max_width">
+      <footer>
+        <div id="logo_slogan">
+          <picture>
+            <source
+              class="footerlogo"
+              srcset="./img/logo_small_white.png"
+              media="(max-width: 850px)"
+            />
+            <source
+              class="footerlogo"
+              srcset="./img/logo_white.png"
+              media="(max-width: 1440px)"
+            />
+            <img
+              class="footerlogo"
+              src="./img/logo_white.png"
+              alt="Logo von Kochwelt"
+            />
+          </picture>
+          <span id="slogan" class="display_none_850"
+            >-Rezepte, die dein Herz erwärmen.-</span
+          >
+        </div>
+        <div class="seperator_footer display_none_500"></div>
+        <div id="footer_socials">
+          <div id="social_logos">
+            <a href="http://www.facebook.com">
+              <img src="./img/facebook_white.png" alt="Facebooklogo" />
+            </a>
+            <a href="http://www.instagram.com">
+              <img src="./img/instagram_white.png" alt="Instagramlogo" />
+            </a>
+            <a href="http://www.twitter.com">
+              <img src="/img/X_logo_white.png" alt="X-logo" />
+            </a>
+          </div>
+        </div>
+        <div class="seperator_footer display_none_500"></div>
+        <div id="req_links">
+          <a href="/Impressum/impressum.html">Impressum</a>
+          <a href="/Datenschutz/Datenschutz.html">Datenschutz</a>
+        </div>
+      </footer>
+    </section>
+  </body>
 </html>
