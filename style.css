@@ -234,7 +234,7 @@ footer {
 }
 
 /* Footer bis hier*/
-.middle{     /* geht nicht  */
+.middle{     
     display: flex;
     justify-content: center;
     background-color: #EFEFEF;
@@ -250,8 +250,8 @@ footer {
     align-items: center;
     padding-bottom: 100px;
     box-sizing: border-box;
-    max-width: 1440px;  /* geht nicht  */
-    width: 100%;          /* geht nicht  */
+    max-width: 1440px;  
+    width: 100%;          
     
     
 }
