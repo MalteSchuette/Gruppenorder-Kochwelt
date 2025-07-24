@@ -147,14 +147,18 @@ a {
 
 .footer_max_width
 {
-    width: 100%;
+    
     background-color: #403B3B;
+    display: flex;
+    justify-content: center;
 }
 
 footer {
+    width: 100%;
     max-width: 1440px;
     height: 250px;
     margin:0;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -233,17 +237,19 @@ footer {
 .middle{     /* geht nicht  */
     display: flex;
     justify-content: center;
+    background-color: #EFEFEF;
 }
 
 #recipe_ideas {
     padding-left: 160px;
     padding-right: 160px;
-    background-color: #EFEFEF;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 100px;
+    box-sizing: border-box;
     max-width: 1440px;  /* geht nicht  */
     width: 100%;          /* geht nicht  */
     
