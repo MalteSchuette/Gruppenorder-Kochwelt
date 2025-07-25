@@ -67,7 +67,10 @@ a {
     width: 100%;
     justify-content: center;
 }
-
+main
+{
+    max-width: 1440px;
+}
  .part_start{
    
     display: flex;
@@ -83,8 +86,14 @@ a {
     padding-bottom: 80px;
      max-width: 1440px;
      width: 100%;
-     box-sizing: border-box;
 
+}
+
+.max_width_s2
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .recept_img1{
   flex: 1;
@@ -147,18 +156,14 @@ a {
 
 .footer_max_width
 {
-    
+    width: 100%;
     background-color: #403B3B;
-    display: flex;
-    justify-content: center;
 }
 
 footer {
-    width: 100%;
     max-width: 1440px;
     height: 250px;
     margin:0;
-    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -234,25 +239,16 @@ footer {
 }
 
 /* Footer bis hier*/
-.middle{     
-    display: flex;
-    justify-content: center;
-    background-color: #EFEFEF;
-}
 
 #recipe_ideas {
     padding-left: 160px;
     padding-right: 160px;
-    
+    background-color: #EFEFEF;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 100px;
-    box-sizing: border-box;
-    max-width: 1440px;  
-    width: 100%;          
-    
     
 }
 
@@ -283,7 +279,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  width: 100%;
+    width: 100%;
 
 }
 
@@ -319,16 +315,10 @@ footer {
 .recipe_and_name span {
     font-size: 16px;
 }
-.part_end{
-    display: flex;
-    justify-content: center;
-}
+
 .jeromes_recept {
     padding-left: 160px;
     padding-right: 160px;
-    box-sizing: border-box;
-    max-width: 1440px;
-    width: 100%;
 }
 
 h2 {
